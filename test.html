@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <title>Тестовое задание</title>
+    <meta charset='utf-8'>
+
+    <link rel='stylesheet' type='text/css' href='/styles/styles.css'>
+
+    <!-- Open Sans: Regular, SemiBold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='container'>
+        <div class='aviasales_logo'>
+            <img src='/images/logo.svg' alt="Aviasales">
+        </div>
+        <div class='filter'>
+            <div class='filter_inner_kol'>Количество пересадок</div>
+            <div class='filter_inner_checkbox'>
+                <div class='checkbox'>
+                    <input class='check check_all' type='checkbox' id='all'>
+                    <label for='all'>Все</label>
+                </div>
+                <div class='checkbox'>
+                    <input class='check check_no_one_two_three' type='checkbox' id='no_one'>
+                    <label for='no_one'>Без пересадок</label>
+                </div>
+
+                <div class='checkbox'>
+                    <input class='check check_no_one_two_three' type='checkbox' id='one'>
+                    <label for='one'>1 пересадка</label>
+                </div>
+
+                <div class='checkbox'>
+                    <input class='check check_no_one_two_three' type='checkbox' id='two'>
+                    <label for='two'>2 пересадки</label>
+                </div>
+
+                <div class='checkbox'>
+                    <input class='check check_no_one_two_three' type='checkbox' id='three'>
+                    <label for='three'>3 пересадки</label>
+                </div>
+            </div>
+        </div>
+        <div class='buttons'>
+            <div class='buttons_nav'>
+                <button class='btn_nav low_cost' type='button' data-btn='#btn_1'>Самый дешевый</button>
+                <button class='btn_nav fast' type='button' data-btn='#btn_2'>Самый быстрый</button>
+            </div>
+            <div class='buttons_content'>
+            </div>
+        </div>
+    </div>
+    
+    <script src='/scripts/scripts.js'></script>
+</body>
+</html>

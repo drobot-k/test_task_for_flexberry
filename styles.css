@@ -1,0 +1,312 @@
+body {
+    margin: 0;
+
+    background-color: #F3F7FA;
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+
+    width: 100%;
+    max-width: 754px;
+    height: 1350px;
+
+    margin: 0 auto;
+}
+
+.aviasales_logo {
+    display: block;
+    position: absolute;
+
+    /* img 82x82 img_inner 60x60 top 50 (отступ в фигме) -> 82-60=22 22/2= 11 - отступ от картинки до края элемента 50-11=39 - отступ от верха страницы */
+    top: 39px;
+    left: 347px;
+}
+
+.filter {
+    position: absolute;
+
+    width: 232px;
+    height: 252px;
+
+    top: 160px;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: white;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+.filter_inner_kol {
+    position: absolute;
+
+    width: 192px;
+    height: 12px;
+
+    left: 20px;
+    top: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #4A4A4A;
+}
+
+.filter_inner_checkbox {
+    position: absolute;
+    
+    top: 42px;
+}
+
+.checkbox {
+    width: 232px;
+    height: 40px;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #4A4A4A;
+}
+
+label {
+    position: absolute;
+    
+    width: 182px;  
+    height: 40px;
+
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+input {
+    appearance: none;
+}
+
+.check {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+
+    background-image: url(/images/checkbox.svg);
+}
+
+.checkbox .checked {
+    background-image: url(/images/checked.svg);
+}
+
+.checkbox:hover {
+    background: #F1FCFF;
+
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    position: absolute;
+
+    display: block;
+
+    top: 160px;
+    left: 252px;
+}
+
+button {
+    width: 252px;
+    height: 50px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #4A4A4A;
+
+    background-color: white;
+
+    border-style: solid;
+    border-color: #DFE5EC;
+}
+
+button:first-child {
+    border-radius: 5px 0px 0px 5px;
+
+    border-width: 1px 0px 1px 1px;
+}
+
+button:last-child {
+    border-radius: 0px 5px 5px 0px;
+
+    border-width: 1px 1px 1px 0px;
+
+    margin-left: -6px;
+}
+
+.btn_nav.active {
+    background-color: #2196F3;
+
+    border-color: #2196F3;
+
+    color: white;
+}
+
+.btn_nav:not(.active):hover {
+    background: #F1FCFF;
+
+    cursor: pointer;
+}
+
+.btn_cnt {
+    display: none;
+}
+
+.btn_cnt.active {
+    position: relative;
+
+    display: block;
+
+    width: 502px;
+    height: 184px;
+
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: white;
+}
+
+.price {
+    position: absolute;
+
+    top: 26px;
+    left: 20px;
+
+    width: 147px;
+   
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: #2196F3;
+}
+
+.avia_logo {
+    position: absolute;
+
+    top: 20px;
+    left: 372px;
+}
+
+.there {
+    display: inline-flex;
+
+    position: absolute;
+
+    top: 76px;
+    left: 20px;
+
+    width: 462px;
+    height: 39px;
+}
+
+.city_period,
+.way_time,
+.transfer_t_city,
+.city_period_b,
+.way_time_b,
+.transfer_t_city_b {
+    width: 141px;
+    height: 39px;
+}
+
+.city,
+.way,
+.transfer,
+.city_b,
+.way_b,
+.transfer_b{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #A0B0B9;
+}
+
+.period,
+.time,
+.t_city,
+.period_b,
+.time_b,
+.t_city_b {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #4A4A4A;
+}
+
+.back {
+    display: inline-flex;
+
+    position: absolute;
+
+    top: 125px;
+    left: 20px;
+
+    width: 462px;
+    height: 39px;
+}
+
+.oops {
+    position: relative;
+
+    display: block;
+
+    width: 502px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: white;
+
+    text-align: center;
+    line-height: 50px;
+}
